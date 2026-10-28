@@ -40,8 +40,9 @@
 
 ## Notes and limits
 
-- `use_github_token: true` means the workflow relies on the repository's `GITHUB_TOKEN`. This is simplest, but pull requests from forks get a read-only token and **no secrets**, so OpenCode cannot run there.
 - The workflow grants `contents: write`, `pull-requests: write`, and `issues: write` so OpenCode can branch, commit, and comment.
+- Because the repository is public, the workflow only runs for comments from `OWNER`, `MEMBER`, or `COLLABORATOR` accounts. This prevents strangers from consuming your API credits. Do not remove that guard.
+- `use_github_token: true` means the workflow relies on the repository's `GITHUB_TOKEN`. This is simplest, but pull requests from forks get a read-only token and **no secrets**, so OpenCode cannot run there.
 - To use the OpenCode GitHub App with OIDC instead, replace the Run step with the OIDC configuration from https://opencode.ai/docs/github/ and remove `use_github_token`.
 - If you prefer a different model, change `model: opencode/big-pickle` and set the matching provider key as a secret.
 - The repository and its history contain only fictional demo content, but review the 5 MB demo video before pushing if repository size matters.
