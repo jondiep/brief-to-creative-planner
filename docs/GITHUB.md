@@ -15,7 +15,7 @@
 1. Create an empty GitHub repository, then connect and push:
 
    ```bash
-   cd "/Users/danvyho/Agency Brief-to-Creative Planner - Portfolio Demo"
+   cd "Agency Brief-to-Creative Planner - Portfolio Demo"
    git remote add origin git@github.com:YOUR_USER/YOUR_REPO.git
    git push -u origin main
    ```

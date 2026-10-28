@@ -80,6 +80,15 @@ node demo/record-demo.js
 
 The recorder uses the locally installed Google Chrome and Playwright's bundled ffmpeg. No browser download is needed, though `npx playwright install ffmpeg` may be required once.
 
+## GitHub integration
+
+`opencode github install` is a V1 command and is not available in OpenCode v2.2.0. A manual GitHub Actions workflow is included instead:
+
+- Workflow: `.github/workflows/opencode.yml`
+- Setup instructions and remaining steps: `docs/GITHUB.md`
+
+The workflow still needs a GitHub remote, an `OPENCODE_API_KEY` repository secret, and a push before it can run.
+
 ## Scope
 
 Deliberately excluded: authentication, third-party integrations, file uploads, multi-agent orchestration. All briefs in `samples/` and `demo/` are fictional. Do not put confidential client material in the app.
