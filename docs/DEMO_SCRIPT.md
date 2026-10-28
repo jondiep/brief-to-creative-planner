@@ -34,7 +34,7 @@ The recorder uses the locally installed Google Chrome and Playwright's bundled f
 | 0:49–0:53 | Markdown export | 5. Export the edited draft / JSON for tools, Markdown for docs, plain text, or copy to clipboard |
 | 0:53–0:57 | Wrap-up | Small, local, testable / 10 fictional briefs evaluated for constraint-following and unsupported claims |
 
-*Timings are approximate; the actual file is 50.24 seconds.*
+*Timings are approximate; the actual file is 51.92 seconds.*
 
 ## Optional live narration
 
