@@ -1,0 +1,38 @@
+{
+  "launch": {
+    "objective": "Drive signups for new product",
+    "audience": "Young professionals aged 25-34 who value sustainability",
+    "product": "EcoSip Reusable Bottle",
+    "tone": "Friendly and playful",
+    "channels": ["Instagram", "Email", "Landing Page"],
+    "constraints": ["Must use approved brand colors", "Keep claims factual", "Budget under $5000"],
+    "sourceNotes": "Product has 24hr insulation, BPA-free, made from recycled materials"
+  },
+  "event": {
+    "objective": "Increase event attendance",
+    "audience": "Local community members interested in tech and networking",
+    "product": "TechConnect Meetup",
+    "tone": "Professional and energetic",
+    "channels": ["Email", "Social", "Web"],
+    "constraints": ["Must include registration link", "Comply with venue capacity limits"],
+    "sourceNotes": "Free event with food and drinks, speakers from local startups"
+  },
+  "sustainability": {
+    "objective": "Raise awareness about carbon footprint reduction",
+    "audience": "Environmentally conscious consumers",
+    "product": "GreenStep Carbon Offset Program",
+    "tone": "Educational and inspiring",
+    "channels": ["Blog", "Social", "Email"],
+    "constraints": ["Avoid greenwashing claims", "Cite sources when making statistics", "Must be factually accurate"],
+    "sourceNotes": "Each purchase offsets 10kg CO2, verified by third-party auditor"
+  },
+  "local": {
+    "objective": "Boost foot traffic to physical store",
+    "audience": "Neighborhood residents within 3 miles",
+    "product": "Corner Cafe Weekend Special",
+    "tone": "Warm and community-focused",
+    "channels": ["Social", "Email"],
+    "constraints": ["Must include valid dates and times", "Limited to local delivery area"],
+    "sourceNotes": "Weekend special: buy one pastry get second 50% off, Sat-Sun only"
+  }
+}

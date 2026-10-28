@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief-to-Creative Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brief-to-Creative Planner</h1>
+            <p class="subtitle">Turn campaign briefs into editable creative drafts for agency teams</p>
+        </header>
+
+        <section class="samples">
+            <h2>Fictional Sample Briefs</h2>
+            <div class="sample-buttons">
+                <button class="sample-btn" data-sample="launch">Product Launch</button>
+                <button class="sample-btn" data-sample="event">Event Promotion</button>
+                <button class="sample-btn" data-sample="sustainability">Sustainability Campaign</button>
+                <button class="sample-btn" data-sample="local">Local Business Promo</button>
+            </div>
+        </section>
+
+        <section class="brief-form">
+            <h2>Campaign Brief</h2>
+            <form id="briefForm">
+                <div class="form-group">
+                    <label for="objective">Objective *</label>
+                    <input type="text" id="objective" name="objective" placeholder="e.g., Drive signups for new product">
+                </div>
+
+                <div class="form-group">
+                    <label for="audience">Target Audience</label>
+                    <input type="text" id="audience" name="audience" placeholder="e.g., Young professionals aged 25-34">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Product/Service *</label>
+                    <input type="text" id="product" name="product" placeholder="e.g., EcoSip Reusable Bottle">
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Tone</label>
+                    <input type="text" id="tone" name="tone" placeholder="e.g., Friendly, playful, urgent, professional">
+                </div>
+
+                <div class="form-group">
+                    <label for="channels">Channels (comma-separated)</label>
+                    <input type="text" id="channels" name="channels" placeholder="e.g., Instagram, Email, Landing Page">
+                </div>
+
+                <div class="form-group">
+                    <label for="constraints">Constraints (one per line)</label>
+                    <textarea id="constraints" name="constraints" rows="3" placeholder="e.g., Must use approved brand colors&#10;Keep claims factual&#10;Budget under $5000"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="sourceNotes">Source Notes</label>
+                    <textarea id="sourceNotes" name="sourceNotes" rows="3" placeholder="Additional context, references, or notes..."></textarea>
+                </div>
+
+                <button type="submit" class="generate-btn">Generate Draft</button>
+            </form>
+            <p class="help-text">* At least objective or product required</p>
+        </section>
+
+        <section id="errorSection" class="error-section" style="display: none;">
+            <h2>Error</h2>
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+
+        <section id="draftSection" class="draft-section" style="display: none;">
+            <h2>Generated Creative Draft (Editable)</h2>
+            <p class="draft-timestamp">Generated: <span id="generatedAt"></span></p>
+
+            <div class="draft-block">
+                <h3>Target Audience</h3>
+                <textarea id="draftTargetAudience" class="editable" rows="2"></textarea>
+            </div>
+
+            <div class="draft-block">
+                <h3>Key Message</h3>
+                <textarea id="draftKeyMessage" class="editable" rows="2"></textarea>
+            </div>
+
+            <div class="draft-block">
+                <h3>Concepts by Channel</h3>
+                <div id="conceptsContainer"></div>
+            </div>
+
+            <div class="draft-block">
+                <h3>Assumptions</h3>
+                <ul id="assumptionsList" class="editable-list"></ul>
+            </div>
+
+            <div class="draft-block">
+                <h3>Questions to Clarify</h3>
+                <ul id="questionsList" class="editable-list"></ul>
+            </div>
+
+            <div class="draft-block constraints-echo">
+                <h3>Preserved Constraints</h3>
+                <ul id="constraintsEchoList"></ul>
+                <p class="note">Constraints from your brief are preserved above and should be checked during review.</p>
+            </div>
+
+            <div class="draft-block export-block">
+                <h3>Export Draft</h3>
+                <div class="export-buttons">
+                    <button type="button" id="exportJsonBtn" class="export-btn">Export as JSON</button>
+                    <button type="button" id="exportMdBtn" class="export-btn">Export as Markdown</button>
+                    <button type="button" id="exportTxtBtn" class="export-btn">Export as Text</button>
+                    <button type="button" id="copyBtn" class="export-btn copy-btn">Copy to Clipboard</button>
+                </div>
+                <p class="note">Export your edited draft in your preferred format.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

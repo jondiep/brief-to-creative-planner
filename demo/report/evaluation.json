@@ -1,0 +1,117 @@
+{
+  "runAt": "2026-10-28T17:12:29.049Z",
+  "total": 10,
+  "passed": 10,
+  "rows": [
+    {
+      "id": 1,
+      "name": "Missing audience",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 2,
+      "name": "Missing objective and audience",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 3,
+      "name": "Playful tone but no humor",
+      "status": "ok",
+      "constraints_preserved": "Yes",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "Constraints echoed in output: no humor; must be serious.",
+      "passed": true
+    },
+    {
+      "id": 4,
+      "name": "Very restrictive word limits",
+      "status": "ok",
+      "constraints_preserved": "Yes",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "Constraints echoed in output: max 10 words per headline; max 20 characters for CTA.",
+      "passed": true
+    },
+    {
+      "id": 5,
+      "name": "Offer/audience mismatch",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 6,
+      "name": "Source notes too thin to support a claim",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 7,
+      "name": "Empty brief",
+      "status": "error",
+      "constraints_preserved": "n/a",
+      "invented_facts": "n/a",
+      "questions_surfaced": "n/a",
+      "human_review": "Yes",
+      "notes": "Error state shown: \"Please provide at least an objective or product.\". Expected: yes.",
+      "passed": true
+    },
+    {
+      "id": 8,
+      "name": "Only objective",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 9,
+      "name": "Conflicting tones",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    },
+    {
+      "id": 10,
+      "name": "Many channels, minimal information",
+      "status": "ok",
+      "constraints_preserved": "n/a (none supplied)",
+      "invented_facts": "No unsupported absolute claims detected",
+      "questions_surfaced": "Yes",
+      "human_review": "Yes",
+      "notes": "No constraints supplied; assumptions and questions cover missing detail.",
+      "passed": true
+    }
+  ]
+}
